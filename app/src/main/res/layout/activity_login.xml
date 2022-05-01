@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/log_in_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="Welcome back!"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/log_in_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_in_title"
+        android:gravity="center"
+        android:text="Log in to your existent account"
+        android:textSize="20dp"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/log_in_user_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginHorizontal="80dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/user_name_logo"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="@string/user_name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textColor="#0084ff"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/log_in_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/log_in_user_name_et"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="80dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/password_logo"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textColor="#0084ff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/log_in_password_et"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="80dp"
+        android:background="@drawable/btn_bg"
+        android:padding="1dp"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/sign_up_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="160dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/sign_up_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Don't have an account?" />
+
+        <TextView
+            android:id="@+id/sign_up_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/sign_up_reminder"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="@string/sign_up"
+            android:textColor="#0038d1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/log_in_reset_key_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginEnd="80dp"
+        android:gravity="center"
+        android:text="@string/forget_password"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:textColor="#0038d1" />
+
+
+</RelativeLayout>

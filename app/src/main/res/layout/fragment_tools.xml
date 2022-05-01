@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/tools_contact_advisor_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/advisor_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/advisor" />
+
+        <TextView
+            android:id="@+id/fg_tools_advisor_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:paddingLeft="10dp"
+            android:text="Contact Financial Advisors"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/arrow_logo" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fg_tools_advisor_txt"
+            android:layout_marginTop="20dp"
+            android:background="#cccccc" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tools_calculator_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tools_contact_advisor_block"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/calculator_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/calculator" />
+
+        <TextView
+            android:id="@+id/fg_tools_calculator_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:text="Financial Calculator"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/arrow_logo" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fg_tools_calculator_txt"
+            android:layout_marginTop="20dp"
+            android:background="#cccccc" />
+
+    </RelativeLayout>
+</RelativeLayout>

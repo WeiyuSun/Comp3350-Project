@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewZ"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#2196F3"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <EditText
+            android:id="@+id/inputMin"
+            android:background="#CCEFFF"
+            android:layout_width="281dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:hint="Min Amount"
+            android:padding="5dp"
+            android:inputType="numberSigned"/>
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/inputMax"
+            android:background="#CCEFFF"
+            android:layout_width="297dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:hint="Max Amount"
+            android:inputType="numberSigned"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/filterExpRB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="35"
+            android:text="Expense Only" />
+
+        <RadioButton
+            android:id="@+id/filterIncRB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="35"
+            android:text="Income Only" />
+
+        <RadioButton
+            android:id="@+id/filterAllRB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="35"
+            android:checked="true"
+            android:text="All" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/entryFilterB"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_margin="5dp"
+        android:background="#6FBEFD"
+        android:text="Filter"
+        android:textColor="#616161"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/resetFilterB"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_margin="5dp"
+        android:background="#6FBEFD"
+        android:text="Reset"
+        android:textColor="#616161"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/filterEntryBackBtn"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_margin="5dp"
+        android:background="#6FBEFD"
+        android:text="List"
+        android:textColor="#616161"
+        android:textSize="25dp" />
+
+</LinearLayout>

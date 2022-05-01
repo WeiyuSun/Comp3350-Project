@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/listHomeBackBtn"
+            android:layout_width="189dp"
+            android:layout_height="match_parent"
+            android:background="#2196F3"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Home"
+            android:textColor="#212121"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2196F3"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="Entries"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Node: To Delete an entry, Use Long click!"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+
+    <ListView
+        android:id="@+id/entriesList"
+        android:layout_width="match_parent"
+        android:layout_height="697dp"
+        android:cacheColorHint="#AF8282" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="98dp">
+
+        <Button
+            android:id="@+id/entryFilterBtn"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Filter"
+            android:textColor="#212121"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/entryAddBtn"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Add Entry"
+            android:textColor="#212121"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

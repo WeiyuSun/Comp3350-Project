@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout1">
+                <TextView
+                    android:id="@+id/row1Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Total price："
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:id="@+id/row1Edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/row1endlabel"
+                    android:layout_toRightOf="@+id/row1Label"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="right"
+                    android:hint="Total item price"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="k"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/row1endlabel"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout2"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/row2Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mortgage："
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:id="@+id/row2Edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/row2endlabel"
+                    android:layout_toRightOf="@+id/row2Label"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="right"
+                    android:hint="Your mortgage percentage"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" %"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/row2endlabel"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/calTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn"
+                android:text="Calculate Total Amount of Mortgage" />
+
+            <TextView
+                android:id="@+id/showtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calTotal"
+                android:layout_marginTop="10dp"
+                android:text="Mortgage Total Mortgage：***k"
+                android:textSize="16sp" />
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showtotal"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout3"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_marginTop="5dp"/>
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout5"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/row6label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mortgage Year："
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"/>
+
+                <Spinner
+                    android:id="@+id/sp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/row6label"
+                    android:spinnerMode="dialog"></Spinner>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout6"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/row7label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Base Rate："
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/row7Edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/row7label"
+
+                    android:inputType="numberDecimal"
+                    android:spinnerMode="dialog"></EditText>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout7"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn"
+                android:text="Calculate monthly payment"/>
+
+            <TextView
+                android:id="@+id/displayDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail"
+                android:layout_marginTop="10dp"
+                android:text="Total Payment：***k\nInterest Total：***k\nMonthly Payment：***CDN"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
